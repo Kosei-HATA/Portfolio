@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Resume</title>
+    <meta name="description" content="Markdownで更新できる1ページレジュメサイト" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar no-print">
+        <div class="topbar-inner container">
+          <div class="topbar-brand">
+            <p class="topbar-title">Personal Resume</p>
+          </div>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn" id="langJa" data-lang="ja" type="button" aria-pressed="false">
+            日本語
+          </button>
+          <button class="lang-btn" id="langEn" data-lang="en" type="button" aria-pressed="false">
+            English
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="sheet-wrap">
+      <article id="resume" class="sheet" aria-live="polite">
+        <p class="loading">読み込み中...</p>
+      </article>
+    </main>
+  </body>
+</html>
